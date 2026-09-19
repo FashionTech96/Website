@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion Technology — Official Barudan (Japan) Embroidery Machine Distributor | Riyadh, KSA</title>
+<meta name="description" content="Fashion Technology is the official Barudan (Japan) embroidery machine distributor for Saudi Arabia and Sudan. 30 years of embroidery consulting, machine sales, training, and custom embroidery for garments, hospitality uniforms, flags and banners — based in Riyadh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Slab:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F1F3D;
+    --ink-2:#152a4d;
+    --canvas:#F6F3EC;
+    --canvas-2:#EDE7D8;
+    --brass:#B8894B;
+    --brass-2:#96703B;
+    --thread:#A23B2E;
+    --charcoal:#23262B;
+    --steel:#707A88;
+    --white:#FFFFFF;
+    --radius:2px;
+    --max:1140px;
+    --serif:'IBM Plex Slab', Georgia, serif;
+    --sans:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
+  }
+
+  body{
+    margin:0;
+    font-family:var(--sans);
+    color:var(--charcoal);
+    background:var(--canvas);
+    line-height:1.6;
+  }
+
+  h1,h2,h3{
+    font-family:var(--serif);
+    color:var(--ink);
+    margin:0 0 0.5em 0;
+    line-height:1.2;
+    font-weight:600;
+  }
+
+  p{margin:0 0 1em 0; max-width:62ch;}
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 24px;}
+
+  /* running-stitch rule used as a structural divider between sections —
+     a literal nod to the product, not decoration for its own sake. */
+  .stitch{
+    border:0; height:0;
+    border-top:2px dashed var(--brass);
+    opacity:0.55; margin:0;
+  }
+
+  /* -------- header -------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:var(--ink);
+    border-bottom:1px solid rgba(184,137,75,0.35);
+  }
+  header .bar{display:flex; align-items:center; justify-content:space-between; padding:12px 24px;}
+  .brand{display:flex; align-items:center; gap:14px; color:var(--canvas); text-decoration:none;}
+  .brand .logo-frame{
+    width:52px; height:52px; border:1px solid var(--brass); background:var(--white);
+    display:flex; align-items:center; justify-content:center; position:relative; flex-shrink:0; padding:5px;
+  }
+  .brand .logo-frame img{width:100%; height:100%; object-fit:contain;}
+  .brand .logo-frame .fallback{font-family:var(--serif); color:var(--ink); font-weight:700; font-size:16px;}
+  .brand .logo-frame img.hidden{display:none;}
+  .brand-name{font-family:var(--serif); font-size:18px; letter-spacing:0.2px;}
+  .brand-name small{display:block; font-family:var(--sans); font-size:10.5px; color:var(--brass); font-weight:500; letter-spacing:0.5px;}
+
+  nav.primary{display:flex; align-items:center; gap:28px;}
+  nav.primary a{color:var(--canvas); text-decoration:none; font-size:14.5px; font-weight:500; opacity:0.85; transition:opacity 0.15s ease;}
+  nav.primary a:hover, nav.primary a:focus-visible{opacity:1;}
+
+  .btn{
+    display:inline-flex; align-items:center; gap:8px; padding:11px 20px; border-radius:var(--radius);
+    font-weight:600; font-size:14.5px; text-decoration:none; border:1px solid transparent; cursor:pointer;
+    transition:transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+  }
+  .btn-brass{background:var(--brass); color:var(--ink);}
+  .btn-brass:hover{background:var(--brass-2);}
+  .btn-outline{border-color:var(--brass); color:var(--canvas); background:transparent;}
+  .btn-outline:hover{background:rgba(184,137,75,0.12);}
+  .btn:focus-visible{outline:2px solid var(--brass); outline-offset:2px;}
+
+  .nav-toggle{display:none; background:none; border:1px solid var(--brass); color:var(--canvas); width:40px; height:36px; border-radius:var(--radius); cursor:pointer;}
+
+  /* -------- hero -------- */
+  .hero{
+    background:radial-gradient(1100px 500px at 85% -10%, rgba(184,137,75,0.16), transparent 60%), var(--ink);
+    color:var(--canvas); padding:96px 0 80px; position:relative; overflow:hidden;
+  }
+  .hero::after{
+    content:"";
+    position:absolute; inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='60' viewBox='0 0 240 60'%3E%3Cpath d='M0 30 Q 15 5 30 30 T 60 30 T 90 30 T 120 30 T 150 30 T 180 30 T 210 30 T 240 30' fill='none' stroke='%23B8894B' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-repeat:repeat; opacity:0.05; pointer-events:none;
+  }
+  .hero .wrap{position:relative; display:grid; grid-template-columns:1.15fr 0.85fr; gap:56px; align-items:center;}
+  .eyebrow-line{font-size:14px; color:var(--brass); font-weight:600; margin-bottom:18px; display:flex; align-items:center; gap:10px;}
+  .eyebrow-line::before{content:""; width:28px; height:1px; background:var(--brass); display:inline-block;}
+  .eyebrow-line--center{justify-content:center;}
+  .hero h1{color:var(--white); font-size:clamp(32px, 4.4vw, 50px); max-width:14ch;}
+  .hero p.lead{color:#D9DEE8; font-size:17px; max-width:46ch;}
+  .hero-ctas{display:flex; gap:14px; margin-top:30px; flex-wrap:wrap;}
+
+  /* -------- distributor plaque: replaces a showroom photo we don't have
+     with the one real, honest asset that exists — the manufacturer's logo,
+     presented as an authorization plaque rather than a stock photo. -------- */
+  .hero-plaque{background:var(--canvas); border:1px solid var(--brass); padding:44px 32px; text-align:center;}
+  .plaque-logo{max-width:100%; max-height:110px; margin:0 auto; display:block;}
+  .plaque-fallback{display:none; font-family:var(--serif); font-size:24px; color:var(--ink);}
+  .plaque-caption{margin:26px 0 0; padding-top:20px; border-top:1px dashed rgba(184,137,75,0.6); font-size:13.5px; color:var(--steel); max-width:none;}
+
+  /* -------- credentials strip -------- */
+  .credentials{background:var(--canvas-2); padding:28px 0;}
+  .credentials .wrap{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+  .credential{display:flex; align-items:flex-start; gap:14px;}
+  .credential svg{flex-shrink:0; margin-top:2px;}
+  .credential strong{display:block; font-family:var(--serif); color:var(--ink); font-size:16px;}
+  .credential span{color:var(--steel); font-size:13.5px;}
+
+  /* -------- section shell -------- */
+  section{padding:76px 0;}
+  .section-head{max-width:60ch; margin-bottom:40px;}
+  .section-head h2{font-size:clamp(26px,3vw,34px);}
+  .section-head p{color:var(--steel); font-size:15.5px;}
+
+  /* -------- about -------- */
+  .about .wrap{display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; align-items:center;}
+  .about-copy p{color:var(--charcoal);}
+
+  /* a typographic stat in place of a team photo we don't have yet —
+     the most characteristic fact about the business, given full weight. */
+  .stat-panel{background:var(--canvas-2); border-left:3px solid var(--brass); padding:44px 40px;}
+  .stat-number{font-family:var(--serif); font-weight:700; font-size:104px; line-height:1; color:var(--ink);}
+  .stat-label{margin-top:14px; color:var(--steel); font-size:15px; max-width:26ch;}
+
+  /* -------- services: bordered rows, not identical rounded cards -------- */
+  .service-row{display:grid; grid-template-columns:56px 1fr; gap:20px; padding:28px 0; border-bottom:1px dashed rgba(184,137,75,0.5);}
+  .service-row:first-of-type{border-top:1px dashed rgba(184,137,75,0.5);}
+  .service-icon{width:56px; height:56px; border:1px solid var(--brass); display:flex; align-items:center; justify-content:center; color:var(--brass);}
+  .service-row h3{font-size:19px; margin-bottom:6px;}
+  .service-row p{color:var(--steel); font-size:14.5px; margin:0; max-width:64ch;}
+
+  /* -------- why us / heritage strip -------- */
+  .heritage{background:var(--ink); color:var(--canvas);}
+  .heritage blockquote{font-family:var(--serif); font-size:clamp(22px,2.6vw,30px); color:var(--white); margin:0; max-width:22ch; line-height:1.35; font-weight:600;}
+  .heritage cite{display:block; margin-top:18px; font-style:normal; color:var(--brass); font-size:14px;}
+
+  /* -------- contact -------- */
+  .contact .wrap{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start;}
+  .contact-info dl{margin:0;}
+  .contact-info dt{font-size:12.5px; text-transform:uppercase; letter-spacing:0.6px; color:var(--brass); font-weight:600; margin-top:20px;}
+  .contact-info dt:first-child{margin-top:0;}
+  .contact-info dd{margin:4px 0 0 0; font-size:15.5px;}
+  .contact-info a.plain{text-decoration:none; border-bottom:1px solid transparent;}
+  .contact-info a.plain:hover{border-bottom-color:var(--ink);}
+
+  form.contact-form{display:grid; gap:14px;}
+  form.contact-form label{font-size:13.5px; font-weight:600; color:var(--ink); display:block; margin-bottom:6px;}
+  form.contact-form input, form.contact-form textarea{width:100%; padding:11px 12px; border:1px solid #CFC7B2; background:var(--white); font-family:var(--sans); font-size:14.5px; border-radius:var(--radius);}
+  form.contact-form input:focus, form.contact-form textarea:focus{outline:2px solid var(--brass); outline-offset:1px; border-color:var(--brass);}
+  form.contact-form textarea{min-height:120px; resize:vertical;}
+  .form-note{font-size:12.5px; color:var(--steel); margin-top:4px;}
+
+  /* -------- footer -------- */
+  footer{background:var(--ink-2); color:#B9C2D2; padding:44px 0 28px;}
+  footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:24px;}
+  footer .foot-brand{font-family:var(--serif); color:var(--canvas); font-size:16px;}
+  footer nav a{color:#B9C2D2; text-decoration:none; margin-right:18px; font-size:13.5px;}
+  footer nav a:hover{color:var(--canvas);}
+  .foot-bottom{max-width:var(--max); margin:28px auto 0; padding:18px 24px 0; border-top:1px solid rgba(255,255,255,0.08); font-size:12.5px; color:#8994A6; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;}
+
+  /* -------- responsive -------- */
+  @media (max-width: 880px){
+    nav.primary{position:absolute; top:100%; left:0; right:0; background:var(--ink); flex-direction:column; align-items:flex-start; padding:18px 24px; gap:16px; border-bottom:1px solid rgba(184,137,75,0.35); display:none;}
+    nav.primary.open{display:flex;}
+    .nav-toggle{display:block;}
+    .hero .wrap, .about .wrap, .contact .wrap{grid-template-columns:1fr;}
+    .hero-plaque{order:-1; max-width:380px; margin:0 auto;}
+  }
+  @media (max-width:520px){
+    section{padding:56px 0;}
+    .stat-number{font-size:80px;}
+  }
+</style>
+</head>
+<body>
+
+<!--
+  ============================================================
+  QUICK EDIT GUIDE
+  ------------------------------------------------------------
+  1. Company name is "Fashion Technology" throughout — find &
+     replace if that's not the exact name you want to trade under.
+  2. Update the CONTACT_INFO block right below this comment —
+     phone, WhatsApp number, email, and address.
+  3. Images used: images/logo.jpg (your logo, shown in the header)
+     and images/barudan-logo.jpg (Barudan's logo, shown as the
+     "authorized distributor" plaque in the hero). Keep those two
+     files in an images/ folder next to this file.
+  4. Once you have real photos of the workshop, machines or team,
+     they slot in nicely as a new section — just ask and I'll add
+     it back in using the same design language.
+  ============================================================
+-->
+<script>
+  // ---- CONTACT_INFO: edit these three lines, the rest of the page uses them ----
+  const WHATSAPP_NUMBER = "9665XXXXXXXX"; // international format, no + or spaces
+  const CONTACT_EMAIL   = "info@yourcompany.com";
+  const CONTACT_ADDRESS = "Riyadh, Saudi Arabia"; // used for the "Get directions" link
+</script>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">
+      <span class="logo-frame">
+        <img src="images/logo.jpg" alt="Fashion Technology logo" onerror="this.classList.add('hidden'); this.nextElementSibling.style.display='flex';">
+        <span class="fallback" style="display:none;">FT</span>
+      </span>
+      <span class="brand-name">Fashion Technology<small>Official Barudan (Japan) Distributor</small></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav class="primary" id="primaryNav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-brass">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" style="padding-top:0;">
+    <div class="wrap" style="padding-top:96px; padding-bottom:0;">
+      <div>
+        <p class="eyebrow-line">30 years in embroidery &amp; garment machinery</p>
+        <h1>Riyadh's official home of Barudan embroidery machines</h1>
+        <p class="lead">Fashion Technology supplies, installs, and services genuine Barudan (Japan) embroidery machines across Saudi Arabia and Sudan — backed by three decades of hands-on embroidery and garment-industry consulting.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-brass" id="whatsappHero" href="#" target="_blank" rel="noopener">WhatsApp Us</a>
+          <a class="btn btn-outline" href="#services">See What We Offer</a>
+        </div>
+      </div>
+      <div class="hero-plaque">
+        <p class="eyebrow-line eyebrow-line--center">Authorized distributor of</p>
+        <img class="plaque-logo" src="images/barudan-logo.jpg" alt="Barudan — Japan" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <strong class="plaque-fallback">Barudan</strong>
+        <p class="plaque-caption">Genuine Barudan (Japan) embroidery machines — sold, installed and serviced in Riyadh.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CREDENTIALS STRIP ============ -->
+  <section class="credentials" style="padding:28px 0;">
+    <div class="wrap">
+      <div class="credential">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B8894B" stroke-width="1.6"><path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17l-5.5 4L8 13.5 3 9l6.5-.5L12 2z"/></svg>
+        <div><strong>Official Barudan Distributor</strong><span>Authorized for Saudi Arabia &amp; Sudan</span></div>
+      </div>
+      <div class="credential">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B8894B" stroke-width="1.6"><path d="M12 8v4l3 3M12 22a10 10 0 100-20 10 10 0 000 20z"/></svg>
+        <div><strong>30 Years in the Trade</strong><span>Embroidery, garments &amp; machinery</span></div>
+      </div>
+      <div class="credential">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B8894B" stroke-width="1.6"><path d="M3 21V8l9-5 9 5v13M9 21v-6h6v6"/></svg>
+        <div><strong>Based in Riyadh</strong><span>Sales, training &amp; after-sales support</span></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="stitch">
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="stat-panel">
+        <div class="stat-number">30</div>
+        <p class="stat-label">Years bringing Barudan machines and embroidery know-how to Saudi Arabia and Sudan.</p>
+      </div>
+      <div class="about-copy">
+        <div class="section-head">
+          <h2>Three decades of embroidery expertise, under one roof</h2>
+        </div>
+        <p>For almost 30 years, Fashion Technology has worked at the intersection of machinery and craft — bringing Barudan's Japanese-engineered embroidery machines to workshops and factories across Saudi Arabia and Sudan, and advising businesses on how to put them to work.</p>
+        <p>Beyond machine sales, we consult on embroidery and garment production more broadly: from choosing the right equipment for a new production line, to training operators, to solving day-to-day production problems.</p>
+        <p>Whatever the size of the operation, the goal is the same: reliable machines, properly trained staff, and embroidery work that holds up to inspection.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="stitch">
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What we do</h2>
+        <p>From machinery to finished embroidery, on-site or through consulting.</p>
+      </div>
+
+      <div class="service-row">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M7 8h10M7 12h6"/><circle cx="17" cy="15" r="1.4"/></svg>
+        </div>
+        <div>
+          <h3>Barudan embroidery machines</h3>
+          <p>Sales, installation, spare parts and after-sales service for genuine Barudan (Japan) embroidery machines — as the official distributor for Saudi Arabia and Sudan.</p>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20l-1-4-4-1 4-1 1-4 1 4 4 1-4 1-1 4z"/><circle cx="12" cy="12" r="9"/></svg>
+        </div>
+        <div>
+          <h3>Embroidery &amp; garment consulting</h3>
+          <p>Advice on production setup, machine selection, workflow and operator training for factories and workshops entering or expanding embroidery production.</p>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.4 14.5L16 10.1l1.4-1.4a2 2 0 000-2.8l-2.3-2.3a2 2 0 00-2.8 0L11 4.9M9 6L4.6 10.4a2 2 0 000 2.8l2.3 2.3a2 2 0 002.8 0L14 11"/></svg>
+        </div>
+        <div>
+          <h3>Ready-made garment embroidery</h3>
+          <p>Custom embroidery work for ready-made garments, at production volumes or for smaller custom orders.</p>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4v16M4 4h13l-2.5 4L17 12H4"/></svg>
+        </div>
+        <div>
+          <h3>Uniform embroidery — hotels, hospitals &amp; restaurants</h3>
+          <p>Logo and name embroidery for hospitality, healthcare and food-service uniforms, sized for anything from a single property to a multi-site group.</p>
+        </div>
+      </div>
+
+      <div class="service-row">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3v18M6 4h13l-2.5 4L19 12H6"/></svg>
+        </div>
+        <div>
+          <h3>Custom flags &amp; banners</h3>
+          <p>Embroidered country flags, corporate flags and banners made to order.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ HERITAGE / WHY US ============ -->
+  <section class="heritage">
+    <div class="wrap">
+      <blockquote>
+        Thirty years of embroidery machinery and craft, brought together under one distributor.
+        <cite>Fashion Technology — Riyadh, Saudi Arabia</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-info">
+        <div class="section-head" style="margin-bottom:24px;">
+          <h2>Get in touch</h2>
+          <p>For machine inquiries, spare parts, consulting or embroidery orders.</p>
+        </div>
+        <dl>
+          <dt>WhatsApp</dt>
+          <dd><a class="plain" id="whatsappLink" href="#" target="_blank" rel="noopener">Chat with us</a></dd>
+          <dt>Email</dt>
+          <dd><a class="plain" id="emailLink" href="#">info@yourcompany.com</a></dd>
+          <dt>Location</dt>
+          <dd id="addressText">Riyadh, Saudi Arabia — <a class="plain" id="directionsLink" href="#" target="_blank" rel="noopener">get directions</a></dd>
+          <dt>Coverage</dt>
+          <dd>Saudi Arabia &amp; Sudan</dd>
+        </dl>
+      </div>
+      <div>
+        <!--
+          This form opens the visitor's email app with the message pre-filled
+          (works on GitHub Pages with no backend). If you'd rather have
+          submissions land straight in your inbox, create a free form
+          endpoint at https://formspree.io and point the form there instead.
+        -->
+        <form class="contact-form" id="contactForm">
+          <div>
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" required>
+          </div>
+          <div>
+            <label for="cf-contact">Phone or email</label>
+            <input type="text" id="cf-contact" name="contact" required>
+          </div>
+          <div>
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-brass">Send Message</button>
+          <p class="form-note">Sends via your email app. To receive messages directly, connect a free <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a> form instead.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="foot-brand">Fashion Technology</div>
+      <p style="color:#8994A6; font-size:13px; margin-top:6px; max-width:36ch;">Official Barudan (Japan) embroidery machine distributor — Saudi Arabia &amp; Sudan.</p>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  <div class="foot-bottom">
+    <span>© <span id="year"></span> Fashion Technology. All rights reserved.</span>
+    <span>Riyadh, Saudi Arabia</span>
+  </div>
+</footer>
+
+<script>
+  // Wire up WhatsApp / email / directions links from the CONTACT_INFO block above
+  document.getElementById('whatsappHero').href = 'https://wa.me/' + WHATSAPP_NUMBER;
+  document.getElementById('whatsappLink').href = 'https://wa.me/' + WHATSAPP_NUMBER;
+  document.getElementById('emailLink').href = 'mailto:' + CONTACT_EMAIL;
+  document.getElementById('emailLink').textContent = CONTACT_EMAIL;
+  document.getElementById('directionsLink').href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(CONTACT_ADDRESS);
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const primaryNav = document.getElementById('primaryNav');
+  navToggle.addEventListener('click', () => {
+    const isOpen = primaryNav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  // Contact form -> mailto fallback (no backend needed on GitHub Pages)
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const name = document.getElementById('cf-name').value;
+    const contact = document.getElementById('cf-contact').value;
+    const message = document.getElementById('cf-message').value;
+    const subject = encodeURIComponent('Website inquiry from ' + name);
+    const body = encodeURIComponent(message + '\n\nContact: ' + contact);
+    window.location.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + subject + '&body=' + body;
+  });
+</script>
+
+</body>
+</html>
